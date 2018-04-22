@@ -13,11 +13,11 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-tf.app.flags.DEFINE_string('train_directory', './',
+tf.app.flags.DEFINE_string('train_directory', './train',
                            'Training data directory')
-tf.app.flags.DEFINE_string('validation_directory', './',
+tf.app.flags.DEFINE_string('validation_directory', './test',
                            'Validation data directory')
-tf.app.flags.DEFINE_string('output_directory', './',
+tf.app.flags.DEFINE_string('output_directory', './output',
                            'Output data directory')
 
 tf.app.flags.DEFINE_integer('train_shards', 4,
